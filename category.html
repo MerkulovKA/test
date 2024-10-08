@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Montserrat+Alternates:wght@600;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+
+    
+    
+    
+
+
+            <title>Cтраница продукта</title>
+                <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<div class="header header--secondary">
+    <div class="container">
+        <div class="header-location">
+            <span class="header-location__label">
+                Ваш город:
+            </span>
+            <button data-fancybox data-src="#modal-selected-city" class="header-location__action">
+                Екатеринбург
+            </button>
+        </div>
+        <ul class="header-business-info">
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#place"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Екатеринбург, ул. Данилы Зверева 23/1
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#mail"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     uralsrub5@gmail.com
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#clock"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Работаем: ПН-ВС с 9:00 до 19:00
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<header id="main-header" class="header header--main">
+    <div class="container">
+        <a href="/" class="header__logotype">
+            <img src="/images/logotype.svg" alt="Россруб: Строительство домов и бань из дерева" width="235" height="55">
+        </a>
+
+        <div class="header__menu">
+            <div class="header__desktop-burger">
+                <button id="desktop-menu-button" class="button button--primary header__desktop-menu"
+                        style="padding: 12px 12px">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                    <span>
+                    Меню
+                </span>
+                </button>
+
+            </div>
+            <div class="header__search"></div>
+            <a href="" class="header__desktop-phone-link">
+                <span class="header__desktop-phone-link-row">
+                    <span class="header__desktop-phone-link-icon-container">
+                        <svg class="header__desktop-phone-link-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </span>
+                    <span class="header__desktop-phone-link-number">
+                        +7 912 683-53-64
+                    </span>
+                </span>
+                <span class="header__desktop-phone-link-description">
+                    Заказать звонок
+                </span>
+            </a>
+
+            <button data-fancybox data-src="#modal-feedback"
+                    class="button button--accent button--outline button--medium">
+                Рассчитать стоимость
+            </button>
+        </div>
+
+        <div class="header__mobile">
+            <a href="" class="header__mobile-phone-link">
+                <svg class="">
+                    <use xlink:href="/images/icons.svg#phone"></use>
+                </svg>
+            </a>
+            <hr class="vertical" style="height: 20px; margin: 0 20px">
+            <button id="mobile-menu-button" class="header__mobile-menu-button">
+                <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                <span>
+            </button>
+        </div>
+    </div>
+</header>    <main class="" style="margin: 40px 0;">
+        
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Категория
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link active">
+                        <span>
+                            Продукт
+                        </span>
+                    </a>
+                </li>
+                    </ol>
+    </div>
+</nav>
+        <div class="category-info">
+            <div class="container">
+                <h1 class="h1">
+                    Строительство деревянных домов под ключ
+                </h1>
+                <div class="content">
+                    <p>
+                        Ваша мечта — вырваться из тесных бетонных «казематов», жить и растить детей в просторном
+                        деревянном
+                        доме?
+                        Компания Россруб предлагает профессиональное строительство деревянных домов, в том числе, под
+                        ключ.
+                        Выполняем все работы оперативно и экономим ваш бюджет.
+                        <span class="font-semibold">
+                            Гарантируем высокое качество и надежность каждого проекта.
+                        </span>
+                    </p>
+                </div>
+
+                <div class="category-info__banner">
+                    <div class="category-info__banner-content">
+                        <div class="category-info__banner-title">
+                            Сроки готовности дома могут изменяться, но есть рассрочка
+                        </div>
+                        <div class="category-info__banner-text">
+                            Оплачивайте работу после выполнения, в виде рассрочки
+                        </div>
+                    </div>
+                    <a href="" class="button button--primary button--medium font-semibold button--outline">
+                        Узнать подробнее
+                    </a>
+                </div>
+                <h2 class="h2">
+                    Этапы строительства дома "Под ключ"
+                </h2>
+            </div>
+            <div id="steps" class="steps">
+                <div class="container">
+                    <div class="steps__container">
+                        <a href="#designing" class="steps__link steps__link--active">
+                            Проектирование
+                        </a>
+                        <a href="#installation-of-foundation" class="steps__link">
+                            Монтаж фундамента
+                        </a>
+                        <a href="" class="steps__link">
+                            Покраска домов из бревна
+                        </a>
+                        <a href="" class="steps__link">
+                            Построение сруба
+                        </a>
+                        <a href="" class="steps__link">
+                            Возведение кровли
+                        </a>
+                        <a href="" class="steps__link">
+                            Работы по электромонтажу
+                        </a>
+                        <a href="" class="steps__link">
+                            Наружная отделка
+                        </a>
+                        <a href="" class="steps__link">
+                            Остальные услуги
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <section id="designing">
+                    <h2 class="h2 container">
+                        1. Проектирование
+                    </h2>
+                    
+
+<div class="component-project-categories">
+    <div class="container">
+        <div class="row" data-row-hover>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="component-project-categories__card component-project-categories__card--blue">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--blue">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--orange">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#"
+                   class="component-project-categories__card component-project-categories__card--red component-project-categories__card--active">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--orange">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>                    <div class="content container">
+                        <p>
+                            Проектирование деревянных домов из бревна – обязательный этап строительства, позволяющий
+                            учесть все нюансы и особенности будущего объекта: правильно расположить его на ландшафте и
+                            предусмотреть все возможные сложности...
+                        </p>
+                        <h3>
+                            Проектирование деревянных бань и домов: основные этапы
+                        </h3>
+                        <p>
+                            Подготовка профессионального проекта – задача не из простых и требует определенных знаний.
+                            Так, процедура состоит из <span class="font-semibold">нескольких ключевых этапов.</span>
+                        </p>
+                        <ol>
+                            <li>
+                                <h5>
+                                    Эскизный проект
+                                </h5>
+                                <p>
+                                    Важная часть работы, позволяющая понять, как будущее здание будет располагаться на
+                                    участке, каким образом будут проложены коммуникации внутри и снаружи. На этом этапе
+                                    определяется строительный материал и состав инженерного оборудования.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>
+                                    Официальное разрешение на строительство
+                                </h5>
+                                <p>
+                                    Эскизный проект утверждается в органах местной власти. Только после этого можно
+                                    приступать к следующим этапам работы.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>
+                                    Рабочий проект
+                                </h5>
+                                <p>
+                                    Проектирование дома из бревна в обязательном порядке должно включать создание
+                                    архитектурного и конструктивного проекта. Рабочие чертежи помогают оптимизировать
+                                    строительство и выполнять его на высоком качественном уровне.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>
+                                    Инженерная часть
+                                </h5>
+                                <p>
+                                    Также важный этап, на котором точно определяется расположение всех отопительных
+                                    приборов, водопроводных конструкций и электросети. Может понадобиться в дальнейшем
+                                    при ремонте и перепланировке.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="h4">
+                                    3D моделирование
+                                </h5>
+                                <p>
+                                    Не все компании предоставляют такую возможность, однако наличие готовой модели в
+                                    проекте позволяет увидеть, каким дом будет в результате, рассмотреть варианты
+                                    отделки и, пока не поздно, заменить альтернативными.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="installation-of-foundation">
+                    <h2 class="h2">
+                        2. Монтаж фундамента
+                    </h2>
+                    <div class="content">
+                        <p>
+                            Если вы ищете прайс-лист на фундаментные работы, вероятно, вы заинтересованы в их
+                            качественном выполнении профессионалами в своем деле. Из таких сотрудников как раз состоит
+                            штат компании РосСруб.
+                        </p>
+                        <h3>
+                            Фундаментные работы: цены и другие особенности
+                        </h3>
+                        <p>
+                            В стандартный прайс на фундаментные работы включены 3 основные разновидности оснований для
+                            домов, зданий и других сооружений: буронабивные сваи с ростверком, ленточные
+                            мелкозаглубленные, плитные. Все они имеют свои расценки, преимущества и особенности.
+                        </p>
+                    </div>
+                    <div class="component-triple-set">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>                </section>
+            </div>
+        </div>
+    </main>
+<div id="desktop-menu" class="desktop-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство домов
+                    </span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство бань
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link">
+                    Наши работы
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Телефон
+                        </div>
+                        <a href="#" class="desktop-menu__contact-description">
+                            +7 (343)-202-00-78
+                        </a>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#place"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Адрес
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            Екатеринбург, ул.Данилы Зверева, д.23/1
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Режим работы
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            ПН–ВС: 9:00–19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shadow-for-menu" role="button" tabindex="0" aria-label="Закрыть" class="shadow-for-menu"></div>
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__category-dropdown">
+                <a href="#" class="mobile-menu__category-dropdown-trigger">
+                    Продукция
+                </a>
+                <ul>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Сантехнические контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Бытовки
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Торговые блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Благоустройство
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                    </ul>
+            </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        О компании
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Услуги
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Наши работы
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Доставка и оплата
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Контакты
+                    </a>
+                </li>
+                    </ul>
+        <div class="mobile-menu__footer">
+            <a href="" class="mobile-menu__footer-link">
+                +7 912 683-53-64
+            </a>
+            <button class="button button--medium button--primary button--outline">
+                Заказать звонок
+            </button>
+            <button class="button button--medium button--primary button--outline">
+                Рассчитать стоимость
+            </button>
+            <div class="mobile-menu__social-list">
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#whatsapp"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#play"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#mail-fill"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <a href="">
+                        <img src="/images/logotype.svg"
+                             alt="Россруб: Строительство домов и бань из дерева"
+                             width="235"
+                             height="55">
+                    </a>
+                    <div class="footer__contact-list">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                                        Екатеринбург,
+                            ул. Данилы Зверева 23/1
+                            </span>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                            Работаем с 9:00 до 22:00 Без выходных 
+                        </span>
+                        </div>
+                        <hr class="horizontal">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                +7 (343)-202-00-78
+                            </a>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                uralsrub5@gmail.com
+                            </a>
+                        </div>
+                        <hr class="horizontal">
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-secondary">
+        <div class="container">
+            <div class="footer-secondary__row">
+                <p>
+                    2024 Все права защищены
+                </p>
+                <a href="" class="footer-secondary__link">
+                    Политика обработки персональных данных
+                </a>
+                <div>
+                    Сделано в
+                    <a href="" class="footer-secondary__link footer-secondary__link--bold">
+                        Маркс & Энгельс
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-selected-city" class="modal-selected-city" style="display:none;">
+    <div class="container">
+        <h2 class="h3">
+            Выберите ваш город
+        </h2>
+        <div class="row" style="margin-top: 40px;">
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Алапаевск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхотурье
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Качканар
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Серов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Арамиль
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Волчанск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кировград
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Среднеуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Артёмовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Дегтярск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Краснотурьинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сухой Лог
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Асбест
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Екатеринбург
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новая Ляля
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сысерть
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Берёзовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Заречный
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуфимск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Тавда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Богданович
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ивдель
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кушва
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Первоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Талица
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ирбит
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Лесной
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Полевской
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Туринск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Пышма
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Каменск-Уральский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Михайловск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ревда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Камышлов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Невьянск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Реж
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Карпинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижние Серги
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Североуральск
+                    </a>
+                </div>
+                    </div>
+    </div>
+</div><div id="modal-feedback" class="modal-feedback" style="display: none; max-width: 640px;">
+    <div class="modal-feedback__content">
+        <h2 class="h2">
+            Заказать звонок
+        </h2>
+        <p class="modal-feedback__description">
+            Оставьте заявку и наш специалист обязательно свяжется с вами в ближайшее время!
+        </p>
+        <form class="modal-feedback__form">
+            <label class="component-input">
+            <span class="component-input__label">
+                Имя
+            </span>
+                <input type="text" placeholder="Василий" class="component-input__input">
+            </label>
+            <label class="component-input">
+                <span class="component-input__label">
+                    Телефон
+                </span>
+                <input type="text" placeholder="8 800 555 35 35" class="component-input__input">
+            </label>
+            <label class="component-textarea">
+                            <textarea rows="4" placeholder="Напишите что-нибудь..."
+                                      class="component-textarea__textarea"></textarea>
+            </label>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <button class="button button--primary button--big button--semibold">
+                        Оформить заказ
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="modal-feedback__accept">
+                        Нажимая на кнопку, Вы даёте свое согласие на обработку Персональных данных
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    <script src="./js/main.js"></script>
+    <script src="./js/steps.js"></script>
+</body>
+</html>

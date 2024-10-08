@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Montserrat+Alternates:wght@600;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+
+    
+    
+    
+
+
+            <title>Главная страница</title>
+                <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<div class="header header--secondary">
+    <div class="container">
+        <div class="header-location">
+            <span class="header-location__label">
+                Ваш город:
+            </span>
+            <button data-fancybox data-src="#modal-selected-city" class="header-location__action">
+                Екатеринбург
+            </button>
+        </div>
+        <ul class="header-business-info">
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#place"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Екатеринбург, ул. Данилы Зверева 23/1
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#mail"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     uralsrub5@gmail.com
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#clock"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Работаем: ПН-ВС с 9:00 до 19:00
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<header id="main-header" class="header header--main">
+    <div class="container">
+        <a href="/" class="header__logotype">
+            <img src="/images/logotype.svg" alt="Россруб: Строительство домов и бань из дерева" width="235" height="55">
+        </a>
+
+        <div class="header__menu">
+            <div class="header__desktop-burger">
+                <button id="desktop-menu-button" class="button button--primary header__desktop-menu"
+                        style="padding: 12px 12px">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                    <span>
+                    Меню
+                </span>
+                </button>
+
+            </div>
+            <div class="header__search"></div>
+            <a href="" class="header__desktop-phone-link">
+                <span class="header__desktop-phone-link-row">
+                    <span class="header__desktop-phone-link-icon-container">
+                        <svg class="header__desktop-phone-link-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </span>
+                    <span class="header__desktop-phone-link-number">
+                        +7 912 683-53-64
+                    </span>
+                </span>
+                <span class="header__desktop-phone-link-description">
+                    Заказать звонок
+                </span>
+            </a>
+
+            <button data-fancybox data-src="#modal-feedback"
+                    class="button button--accent button--outline button--medium">
+                Рассчитать стоимость
+            </button>
+        </div>
+
+        <div class="header__mobile">
+            <a href="" class="header__mobile-phone-link">
+                <svg class="">
+                    <use xlink:href="/images/icons.svg#phone"></use>
+                </svg>
+            </a>
+            <hr class="vertical" style="height: 20px; margin: 0 20px">
+            <button id="mobile-menu-button" class="header__mobile-menu-button">
+                <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                <span>
+            </button>
+        </div>
+    </div>
+</header>    <main style="display: grid; gap: 100px;">
+        <section style="overflow: hidden">
+            <div class="container content">
+                <h2>
+                    H2
+                </h2>
+                <h3>
+                    h3
+                </h3>
+                <h4>
+                    h4
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet asperiores
+                    aspernatur assumenda corporis deleniti dicta, dolor dolorem, doloremque, exercitationem iusto
+                    laborum officia placeat quis suscipit tempora vel veniam.
+                </p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>
+                            Наименование услуги
+                        </th>
+                        <th>
+                            Что входит в услугу
+                        </th>
+                        <th>
+                            Стоимость
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            Часть услуги
+                            по фундаментным работам 1
+                        </td>
+                        <td>
+                            <p>
+                                В ходе почвенно-мелиоративного исследования территории было установлено, что обычай
+                                делового оборота вознаграждает Указ. Доверенность индоссирует водонасыщенный гистерезис
+                                ОГХ. Педотрансферная функция неустойчива.
+                            </p>
+                            <ul>
+                                <li>
+                                    Доверенность фактов
+                                </li>
+                                <li>
+                                    Доверенность водонасыщенный
+                                </li>
+                                <li>
+                                    Доверенность индоссирует
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            от 20 000 тг.
+                        </td>
+                        <td>
+                            <button class="button button--black button--outline">
+                                Сделать&nbsp;заказ
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Часть услуги
+                            по фундаментным работам 1
+                        </td>
+                        <td>
+                            <p>
+                                В ходе почвенно-мелиоративного исследования территории было установлено, что обычай
+                                делового оборота вознаграждает Указ. Доверенность индоссирует водонасыщенный гистерезис
+                                ОГХ. Педотрансферная функция неустойчива.
+                            </p>
+                            <ul>
+                                <li>
+                                    Доверенность фактов
+                                </li>
+                                <li>
+                                    Доверенность водонасыщенный
+                                </li>
+                                <li>
+                                    Доверенность индоссирует
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            от 20 000 тг.
+                        </td>
+                        <td>
+                            <button class="button button--black button--outline">
+                                Сделать&nbsp;заказ
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="component-main-banner">
+    <picture>
+        <source srcset="/images/main_banner.webp" type="image/webp">
+        <img src="/images/main_banner.png" alt="" width="1920" height="756" class="component-main-banner__background">
+    </picture>
+    <div class="container flex">
+        <div class="component-main-banner__container">
+            <h1 class="component-main-banner__title">
+                <span class="component-main-banner__title component-main-banner__title--accent">
+                    Строительство домов
+                </span> и бань из бревна
+                <span class="component-main-banner__title component-main-banner__title--accent">
+                    "под ключ"
+                </span> в Екатеринбурге
+            </h1>
+            <ul class="component-main-banner__list">
+                <li><span>Гарантируем надежность</span> - 20 лет на рынке</li>
+                <li>
+                    <span>Экономим до 20% бюджета</span> - закупая напрямую у поставщиков
+                </li>
+                <li>
+                    <span>Бесплатно</span> поддерживаем сданный объекта <span>в первые 2 года</span>
+                </li>
+            </ul>
+            <p class="component-main-banner__description">
+                Немного описания Пуанта, следовательно, выстраивает сонорна текст
+                период. Аллюзийно-полистилистическая композиция сонорна.
+            </p>
+            <div class="component-main-banner__actions">
+                <button class="button button--primary button--big button--semibold">
+                    Заказать сруб
+                </button>
+                <button class="button button--primary button--outline button--big button--semibold">
+                    Рассчитать стоимость
+                </button>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-services-list">
+    <div class="container">
+        <h2 class="h2">
+            Наши услуги
+        </h2>
+        <p class="subtitle">
+            Занимаемся строительством деревянных домов и бань из бревна “под ключ” в Свердловской области
+        </p>
+        <div class="row component-services-list__cards">
+            <div class="col-xs-12 col-md-6">
+                <div class="component-services-list__card component-services-list__card--blue">
+                    <img src="/images/services-list-1.png" width="300" height="250" loading="lazy" alt=""
+                         class="component-services-list__card-background">
+                    <div class="component-services-list__card-content">
+                        <div class="component-services-list__card-title">
+                            Строительство <span
+                                    class="component-services-list__card-title component-services-list__card-title--accent">домов</span>
+                            и
+                            <span class="component-services-list__card-title component-services-list__card-title--accent">
+                                бань</span> из бревна
+                        </div>
+                        <ul class="component-services-list__card-list">
+                            <li>Проектирование домов из бревна</li>
+                            <li>Монтаж фундамента</li>
+                            <li>Кровельные работы</li>
+                            <li>Покраска деревянного дома</li>
+                            <li>Отделочные работы</li>
+                            <li>Электромонтажные работы</li>
+                            <li>Монтаж водосточной системы</li>
+                            <li>Ремонт и обслуживание кровли</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="component-services-list__card component-services-list__card--green">
+                    <img src="/images/services-list-2.png" width="162" height="124" loading="lazy" alt=""
+                         class="component-services-list__card-background">
+                    <div class="component-services-list__card-content">
+                        <div class="component-services-list__card-title">
+                            Каталог готовых проектов
+                        </div>
+                        <ul class="component-services-list__card-list">
+                            <li>Готовые проекты домов</li>
+                            <li>Готовые проекты бань</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="component-services-list__card component-services-list__card--orange">
+                    <img src="/images/services-list-3.png" width="500" height="290" loading="lazy" alt=""
+                         class="component-services-list__card-background">
+                    <div class="component-services-list__card-content">
+                        <div class="component-services-list__card-title">
+                            Услуги для домов и бань
+                        </div>
+                        <ul class="component-services-list__card-list">
+                            <li>Проектирование домов из бревна</li>
+                            <li>Конопатка сруба в Екатеринбурге</li>
+                            <li>Покраска деревянного дома в Екатеринбурге</li>
+                            <li>Изготовление и монтаж лестниц</li>
+                            <li>Ремонт и обслуживание кровли</li>
+                            <li>Монтаж водосточной системы</li>
+                            <li>Электромонтажные работы</li>
+                            <li>Монтаж фундамента</li>
+                            <li>Отделочные работы</li>
+                            <li>Кровельные работы</li>
+                            <li>Постройка беседок</li>
+                            <li>Шлифовка сруба</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+
+<div class="component-project-categories">
+    <div class="container">
+        <div class="row" data-row-hover>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="component-project-categories__card component-project-categories__card--blue">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--blue">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--orange">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#"
+                   class="component-project-categories__card component-project-categories__card--red component-project-categories__card--active">
+                    <img src="/images/project-categories-1.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты бань из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--orange">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a href="#" class="component-project-categories__card component-project-categories__card--green">
+                    <img src="/images/project-categories-2.png" width="284" height="122" loading="lazy" alt=""
+                         class="component-project-categories__card-background">
+                    <div class="component-project-categories__card-title">
+                        Проекты домов из бревна
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-triple-set">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <div class="component-triple-set__card">
+                        <img src="/images/component-triple-set-1.png" alt="" width="414" height="266" loading="lazy"
+                             class="component-triple-set__card-image">
+                        <div class="component-triple-set__card-content">
+                            <div class="component-triple-set__card-title">
+                                Плитный
+                                фундамент
+                            </div>
+                            <div class="component-triple-set__card-description">
+                                Данный фундамент – оптимальный вариант для дальнейшего возведения дома из бревна на
+                                грунтах,
+                                не склонных к пучению и средним положением грунтовых вод.
+                            </div>
+                        </div>
+                        <div class="component-triple-set__card-footer">
+                            от <span>6000</span> руб/м³
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>        <div class="component-gallery">
+    <div class="container">
+        <div id="slider" class="f-carousel">
+                                                <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-1.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-2.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-3.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-4.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-5.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                                                <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-1.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-2.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-3.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-4.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-5.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                                                <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-1.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-2.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-3.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-4.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                                    <div class="component-gallery__slide f-carousel__slide">
+                        <img src="/images/gallery-5.png" alt="" data-fancybox="gallery">
+                        <div class="component-gallery__slide-action">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#zoom"></use>
+                            </svg>
+                            <span>
+                                Увеличить
+                            </span>
+                        </div>
+                    </div>
+                            
+        </div>
+    </div>
+</div>        <div class="component-portfolio">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="#" class="component-portfolio__card">
+                        <div class="component-portfolio__card-video">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#video"></use>
+                            </svg>
+                        </div>
+                        <div class="component-portfolio__card-square">
+                            532 м2
+                        </div>
+                        <div class="component-portfolio__card-image">
+                            <img src="/images/product.png" alt="" width="320" height="196" loading="lazy">
+                        </div>
+                        <div class="component-portfolio__card-content">
+                            <div class="component-portfolio__card-title">
+                                Дом 200 м2 в п. Солнечный
+                            </div>
+                            <div class="component-portfolio__card-options">
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#house"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#room"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                            </div>
+                            <hr class="horizontal" style="margin: 16px 0;">
+                            <div class="component-portfolio__card-footer">
+                                <div class="component-portfolio__card-price">
+                                    от <span>5 285 000₽</span>
+                                </div>
+                                <div class="button button--primary button--outline button--small">
+                                    Подробнее
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="#" class="component-portfolio__card">
+                        <div class="component-portfolio__card-video">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#video"></use>
+                            </svg>
+                        </div>
+                        <div class="component-portfolio__card-square">
+                            532 м2
+                        </div>
+                        <div class="component-portfolio__card-image">
+                            <img src="/images/product.png" alt="" width="320" height="196" loading="lazy">
+                        </div>
+                        <div class="component-portfolio__card-content">
+                            <div class="component-portfolio__card-title">
+                                Дом 200 м2 в п. Солнечный
+                            </div>
+                            <div class="component-portfolio__card-options">
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#house"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#room"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                            </div>
+                            <hr class="horizontal" style="margin: 16px 0;">
+                            <div class="component-portfolio__card-footer">
+                                <div class="component-portfolio__card-price">
+                                    от <span>5 285 000₽</span>
+                                </div>
+                                <div class="button button--primary button--outline button--small">
+                                    Подробнее
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="#" class="component-portfolio__card">
+                        <div class="component-portfolio__card-video">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#video"></use>
+                            </svg>
+                        </div>
+                        <div class="component-portfolio__card-square">
+                            532 м2
+                        </div>
+                        <div class="component-portfolio__card-image">
+                            <img src="/images/product.png" alt="" width="320" height="196" loading="lazy">
+                        </div>
+                        <div class="component-portfolio__card-content">
+                            <div class="component-portfolio__card-title">
+                                Дом 200 м2 в п. Солнечный
+                            </div>
+                            <div class="component-portfolio__card-options">
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#house"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#room"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                            </div>
+                            <hr class="horizontal" style="margin: 16px 0;">
+                            <div class="component-portfolio__card-footer">
+                                <div class="component-portfolio__card-price">
+                                    от <span>5 285 000₽</span>
+                                </div>
+                                <div class="button button--primary button--outline button--small">
+                                    Подробнее
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="#" class="component-portfolio__card">
+                        <div class="component-portfolio__card-video">
+                            <svg class="">
+                                <use xlink:href="/images/icons.svg#video"></use>
+                            </svg>
+                        </div>
+                        <div class="component-portfolio__card-square">
+                            532 м2
+                        </div>
+                        <div class="component-portfolio__card-image">
+                            <img src="/images/product.png" alt="" width="320" height="196" loading="lazy">
+                        </div>
+                        <div class="component-portfolio__card-content">
+                            <div class="component-portfolio__card-title">
+                                Дом 200 м2 в п. Солнечный
+                            </div>
+                            <div class="component-portfolio__card-options">
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#house"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                                <div class="component-portfolio__card-option">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#room"></use>
+                                    </svg>
+                                    <span>
+                                    Этажей: 1
+                                </span>
+                                </div>
+                            </div>
+                            <hr class="horizontal" style="margin: 16px 0;">
+                            <div class="component-portfolio__card-footer">
+                                <div class="component-portfolio__card-price">
+                                    от <span>5 285 000₽</span>
+                                </div>
+                                <div class="button button--primary button--outline button--small">
+                                    Подробнее
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    </div>
+    </div>
+</div>        <div class="component-services-grid">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12  col-sm-6">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                            <div class="col-xs-12  col-sm-6 col-md-4">
+                    <a href="#" class="component-services-grid__card">
+                        <img src="/images/gallery-4.png" width="640" height="340" alt=""
+                             class="component-services-grid__card-image">
+                        <div class="component-services-grid__card-title">
+                            Срубы домов
+                        </div>
+                    </a>
+                </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="component-services-grid__calculate-card">
+                    <img src="/images/calculate-card-background.png" alt="" width="425" height="262" loading="lazy"
+                         class="component-services-grid__calculate-card-background">
+                    <div class="component-services-grid__calculate-card-content">
+                        <div class="component-services-grid__calculate-card-title">
+                            Калькулятор расчета стоимости
+                        </div>
+                        <div class="component-services-grid__calculate-card-description">
+                            Для вашего объекта
+                        </div>
+                        <button class="button button--primary button--big button--outline">
+                            Рассчитать стоимость
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <section class="component-text-media">
+    <div class="container content">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2 class="h2">
+                    Текст + Фото
+                </h2>
+                <div class="">
+                    <p>
+                        Филогенез теоретически возможен. Конечно, нельзя не принять
+                        во внимание тот факт, что самонаблюдение иллюстрирует ускоряющийся архетип. Психосоматика, как
+                        принято считать, иллюстрирует психоз. Предсознательное, как принято считать, интегрирует
+                        импульс.
+                    </p>
+                    <p>
+
+                        Однако, исследователи постоянно сталкиваются с тем, что фрустрация понимает потребительский
+                        гендер. Проекция притягивает закон.Сновидение, в представлении Морено...
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <figure>
+                    <img src="/images/component-triple-set-1.png" alt="">
+                    <figcaption>
+                        Фото взято из открытого источника: Ссылка
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        
+        <div class="row reverse-sm">
+            <div class="col-xs-12 col-sm-6">
+                <h2 class="h2">
+                    Фото + текст
+                </h2>
+                <div class="">
+                    <p>
+                        Филогенез теоретически возможен. Конечно, нельзя не принять
+                        во внимание тот факт, что самонаблюдение иллюстрирует ускоряющийся архетип. Психосоматика, как
+                        принято считать, иллюстрирует психоз. Предсознательное, как принято считать, интегрирует
+                        импульс.
+                    </p>
+                    <p>
+
+                        Однако, исследователи постоянно сталкиваются с тем, что фрустрация понимает потребительский
+                        гендер. Проекция притягивает закон.Сновидение, в представлении Морено...
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <figure>
+                    <img src="/images/component-triple-set-1.png" alt="">
+                    <figcaption>
+                        Подпись для картинки
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="h2">
+                    Текст
+                </h2>
+                <div class="">
+                    <p>
+                        Филогенез теоретически возможен. Конечно, нельзя не принять
+                        во внимание тот факт, что самонаблюдение иллюстрирует ускоряющийся архетип. Психосоматика, как
+                        принято считать, иллюстрирует психоз. Предсознательное, как принято считать, интегрирует
+                        импульс.
+                    </p>
+                    <p>
+
+                        Однако, исследователи постоянно сталкиваются с тем, что фрустрация понимает потребительский
+                        гендер. Проекция притягивает закон. Сновидение, в представлении Морено...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        <section class="component-licences">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12 col-lg-6">
+                    <div class="component-licences-container">
+                        <picture>
+                            <img class="component-licences-img" src="/images/certificate.png" width="253"
+                                 height="355"
+                                 alt="сертификат">
+                        </picture>
+                        <div class="component-licences-text">
+                            <p class="component-licences-text_title">
+                                Сертификат ПТ 20313
+                            </p>
+
+                            <p class="component-licences-text_default">
+                                Компания РосСруб имеет документ, подаваемый леспопользователе и содержащий исчерпывающие данные об способах применения лесных ресурсов на 2016-2017 гг.
+                            </p>
+
+                            <div class="component-licences-button">
+                                <button class="button button--primary button--small">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#zoom"></use>
+                                    </svg>
+                                    Запросить&nbsp;сертфиикат
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-lg-6">
+                    <div class="component-licences-container">
+                        <picture>
+                            <img class="component-licences-img" src="/images/certificate.png" width="253"
+                                 height="355"
+                                 alt="сертификат">
+                        </picture>
+                        <div class="component-licences-text">
+                            <p class="component-licences-text_title">
+                                Сертификат ПТ 20313
+                            </p>
+
+                            <p class="component-licences-text_default">
+                                Компания РосСруб имеет документ, подаваемый леспопользователе и содержащий исчерпывающие данные об способах применения лесных ресурсов на 2016-2017 гг.
+                            </p>
+
+                            <div class="component-licences-button">
+                                <button class="button button--primary button--small">
+                                    <svg class="">
+                                        <use xlink:href="/images/icons.svg#zoom"></use>
+                                    </svg>
+                                    Запросить&nbsp;сертфиикат
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+        <div class="component-services-banners">
+    <div class="container">
+        <div class="component-services-banners__list">
+                            <div class="component-services-banners__card">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <img src="/images/component-triple-set-1.png" alt="" loading="lazy" width="364"
+                                 height="233" class="component-services-banners__card-image">
+                        </div>
+                        <div class="col-xs">
+                            <div class="component-services-banners__card-content">
+                                <div class="component-services-banners__card-title">
+                                    Цена на одноэтажные срубы домов
+                                </div>
+                                <div class="component-services-banners__card-description">
+                                    Предлагаем Вашему вниманию расценки на срубы домов с мансардой и пятистенком на
+                                    первом этаже. Мансардный этаж позволяет сэкономить на строительных материалах, а
+                                    пятистенок - органично разделить пространство в доме.
+                                </div>
+                                <div class="component-services-banners__card-actions">
+                                    <div class="component-services-banners__card-price">
+                                        от <span>5 285 000₽</span>
+                                    </div>
+                                    <a href="" class="button button--primary button--medium">
+                                        Узнать подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="component-services-banners__card">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <img src="/images/component-triple-set-1.png" alt="" loading="lazy" width="364"
+                                 height="233" class="component-services-banners__card-image">
+                        </div>
+                        <div class="col-xs">
+                            <div class="component-services-banners__card-content">
+                                <div class="component-services-banners__card-title">
+                                    Цена на одноэтажные срубы домов
+                                </div>
+                                <div class="component-services-banners__card-description">
+                                    Предлагаем Вашему вниманию расценки на срубы домов с мансардой и пятистенком на
+                                    первом этаже. Мансардный этаж позволяет сэкономить на строительных материалах, а
+                                    пятистенок - органично разделить пространство в доме.
+                                </div>
+                                <div class="component-services-banners__card-actions">
+                                    <div class="component-services-banners__card-price">
+                                        от <span>5 285 000₽</span>
+                                    </div>
+                                    <a href="" class="button button--primary button--medium">
+                                        Узнать подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="component-services-banners__card">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <img src="/images/component-triple-set-1.png" alt="" loading="lazy" width="364"
+                                 height="233" class="component-services-banners__card-image">
+                        </div>
+                        <div class="col-xs">
+                            <div class="component-services-banners__card-content">
+                                <div class="component-services-banners__card-title">
+                                    Цена на одноэтажные срубы домов
+                                </div>
+                                <div class="component-services-banners__card-description">
+                                    Предлагаем Вашему вниманию расценки на срубы домов с мансардой и пятистенком на
+                                    первом этаже. Мансардный этаж позволяет сэкономить на строительных материалах, а
+                                    пятистенок - органично разделить пространство в доме.
+                                </div>
+                                <div class="component-services-banners__card-actions">
+                                    <div class="component-services-banners__card-price">
+                                        от <span>5 285 000₽</span>
+                                    </div>
+                                    <a href="" class="button button--primary button--medium">
+                                        Узнать подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>        <div class="component-faq">
+    <div class="container">
+        <h2 class="h2">
+            FAQ — ответы на вопросы
+        </h2>
+        <p class="content">
+            Тут вы сможете узнать ответы, на самые часто задаваемые вопросы
+        </p>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-xs">
+                <div class="row">
+                                            <div class="col-xs-12">
+                            <div data-accordion class="component-faq__card">
+                                <button data-accordion-button class="component-faq__card-header">
+                                    <span>
+                                        Пример вопроса 1
+                                    </span>
+                                    <span class="component-faq__card-icon-container">
+                                        <svg class="component-faq__card-icon">
+                                            <use xlink:href="/images/icons.svg#plus"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div data-accordion-body class="component-faq__card-body"
+                                     style="transition-duration: 300ms; overflow: hidden;">
+                                    <hr class="horizontal" style="margin: 12px 0;">
+                                    <div class="component-faq__card-content">
+                                        Пуанта, следовательно, выстраивает громкостнoй прогрессийный период.
+                                        Аллюзийно-полистилистическая композиция сонорна. Фаза mezzo forte продолжает
+                                        хамбакер.
+                                        Open-air, на первый взгляд, синхронно имитирует деструктивный полиряд.
+                                        Контрапункт
+                                        контрастных фактур неизменяем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xs-12">
+                            <div data-accordion class="component-faq__card">
+                                <button data-accordion-button class="component-faq__card-header">
+                                    <span>
+                                        Пример вопроса 2
+                                    </span>
+                                    <span class="component-faq__card-icon-container">
+                                        <svg class="component-faq__card-icon">
+                                            <use xlink:href="/images/icons.svg#plus"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div data-accordion-body class="component-faq__card-body"
+                                     style="transition-duration: 300ms; overflow: hidden;">
+                                    <hr class="horizontal" style="margin: 12px 0;">
+                                    <div class="component-faq__card-content">
+                                        Пуанта, следовательно, выстраивает громкостнoй прогрессийный период.
+                                        Аллюзийно-полистилистическая композиция сонорна. Фаза mezzo forte продолжает
+                                        хамбакер.
+                                        Open-air, на первый взгляд, синхронно имитирует деструктивный полиряд.
+                                        Контрапункт
+                                        контрастных фактур неизменяем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xs-12">
+                            <div data-accordion class="component-faq__card">
+                                <button data-accordion-button class="component-faq__card-header">
+                                    <span>
+                                        Пример вопроса 3
+                                    </span>
+                                    <span class="component-faq__card-icon-container">
+                                        <svg class="component-faq__card-icon">
+                                            <use xlink:href="/images/icons.svg#plus"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div data-accordion-body class="component-faq__card-body"
+                                     style="transition-duration: 300ms; overflow: hidden;">
+                                    <hr class="horizontal" style="margin: 12px 0;">
+                                    <div class="component-faq__card-content">
+                                        Пуанта, следовательно, выстраивает громкостнoй прогрессийный период.
+                                        Аллюзийно-полистилистическая композиция сонорна. Фаза mezzo forte продолжает
+                                        хамбакер.
+                                        Open-air, на первый взгляд, синхронно имитирует деструктивный полиряд.
+                                        Контрапункт
+                                        контрастных фактур неизменяем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xs-12">
+                            <div data-accordion class="component-faq__card">
+                                <button data-accordion-button class="component-faq__card-header">
+                                    <span>
+                                        Пример вопроса 4
+                                    </span>
+                                    <span class="component-faq__card-icon-container">
+                                        <svg class="component-faq__card-icon">
+                                            <use xlink:href="/images/icons.svg#plus"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div data-accordion-body class="component-faq__card-body"
+                                     style="transition-duration: 300ms; overflow: hidden;">
+                                    <hr class="horizontal" style="margin: 12px 0;">
+                                    <div class="component-faq__card-content">
+                                        Пуанта, следовательно, выстраивает громкостнoй прогрессийный период.
+                                        Аллюзийно-полистилистическая композиция сонорна. Фаза mezzo forte продолжает
+                                        хамбакер.
+                                        Open-air, на первый взгляд, синхронно имитирует деструктивный полиряд.
+                                        Контрапункт
+                                        контрастных фактур неизменяем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+            <div class="col-xs-3 hidden-xs visible-md">
+                <div class="component-faq__worker">
+                    <img src="/images/worker.png" alt="" width="378" height="605" loading="lazy"
+                         class="component-faq__worker-background">
+                    <button class="button button--primary button--medium">
+                        Задать вопрос
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-video-reviews">
+    <div class="container">
+        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                    <div class="component-video-reviews__card">
+                        <img src="/images/gallery-3.png" alt="" width="642" height="377" loading="lazy"
+                             class="component-video-reviews__card-image">
+                        <div class="component-video-reviews__card-overlow"></div>
+                        <div class="component-video-reviews__card-content">
+                            <div class="component-video-reviews__card-title">
+                                Отзыв о доме от компании Россруб в пару строчек текста
+                            </div>
+                                                            <button class="button button--white button--outline button--medium">
+                                    Подробнее о проекте
+                                </button>
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-sm-6">
+                    <div class="component-video-reviews__card">
+                        <img src="/images/gallery-3.png" alt="" width="642" height="377" loading="lazy"
+                             class="component-video-reviews__card-image">
+                        <div class="component-video-reviews__card-overlow"></div>
+                        <div class="component-video-reviews__card-content">
+                            <div class="component-video-reviews__card-title">
+                                Отзыв о доме от компании Россруб в пару строчек текста
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="col-xs-12 col-sm-6">
+                    <div class="component-video-reviews__card">
+                        <img src="/images/gallery-3.png" alt="" width="642" height="377" loading="lazy"
+                             class="component-video-reviews__card-image">
+                        <div class="component-video-reviews__card-overlow"></div>
+                        <div class="component-video-reviews__card-content">
+                            <div class="component-video-reviews__card-title">
+                                Отзыв о доме от компании Россруб в пару строчек текста
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</div>        <section class="component-reviews">
+    <div class="container">
+        <div class="row middle-xs">
+            <div class="col-sm">
+                <h2 class="h2">
+                    Отзывы о нашей компании
+                </h2>
+                <p class="subtitle">
+                    Оставьте свой отзыв о нас на популярных ресурсах, или посмотрите уже написанные
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <a href="#" class="button button--primary button--big">
+                    Смотреть отзывы
+                </a>
+            </div>
+        </div>
+        <div class="component-reviews__list row">
+                            <div class="col-xs-12 col-md-4">
+                    <a href="#" title="Yandex Maps" class="component-reviews__card">
+                        <img src="/images/yandex-maps.png" alt="Yandex Maps">
+                    </a>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <a href="#" title="Google Maps" class="component-reviews__card">
+                        <img src="/images/google-maps.png" alt="Google Maps">
+                    </a>
+                </div>
+                            <div class="col-xs-12 col-md-4">
+                    <a href="#" title="Flamp" class="component-reviews__card">
+                        <img src="/images/flamp.png" alt="Flamp">
+                    </a>
+                </div>
+                    </div>
+    </div>
+</section>        <div class="component-contacts">
+    <div class="container">
+        <div class="row middle-xs">
+            <div class="col-xs-12 col-md-8">
+                <h2 class="h2">
+                    Как нас найти
+                </h2>
+                <p class="content">
+                    Хотите заказать проект дома мечты, рассчитать стоимость реализации уже существующего или просто
+                    пообщаться и задать вопрос?
+                    Нас можно найти тут...
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="component-contacts__card component-contacts__card--accent">
+                    <div class="component-contacts__card-icon-container">
+                        <svg class="component-contacts__card-icon">
+                            <use xlink:href="/images/icons.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <div class="component-contacts__card-content">
+                        <div class="component-contacts__card-title">
+                            Режим работы нашего офиса
+                        </div>
+                        <div class="component-contacts__card-description">
+                            ПН–ВС: 9:00–19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component-contacts__map" style="margin-top: 40px;">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A03df941e31367e431d43e32fc7a515f5222b1f9d0b95104e058fbbb8294630f2&amp;source=constructor&amp;scroll=false"
+                    frameborder="0" allowfullscreen="true" width="100%" height="400px" style="display: block;"></iframe>
+        </div>
+        <div class="component-contacts__list" style="margin-top: 40px;">
+            <div class="component-contacts__card">
+                <div class="component-contacts__card-icon-container">
+                    <svg class="component-contacts__card-icon">
+                        <use xlink:href="/images/icons.svg#phone"></use>
+                    </svg>
+                </div>
+                <div class="component-contacts__card-content">
+                    <div class="component-contacts__card-title">
+                        Телефон
+                    </div>
+                    <a href="#" class="component-contacts__card-description">
+                        +7 (343)-202-00-78
+                    </a>
+                </div>
+            </div>
+            <div class="component-contacts__hr"></div>
+            <div class="component-contacts__card">
+                <div class="component-contacts__card-icon-container">
+                    <svg class="component-contacts__card-icon">
+                        <use xlink:href="/images/icons.svg#place"></use>
+                    </svg>
+                </div>
+                <div class="component-contacts__card-content">
+                    <div class="component-contacts__card-title">
+                        Адрес
+                    </div>
+                    <div class="component-contacts__card-description">
+                        Екатеринбург, ул.Данилы Зверева, д.23/1
+                    </div>
+                </div>
+            </div>
+            <div class="component-contacts__hr"></div>
+            <div class="component-contacts__card">
+                <div class="component-contacts__card-icon-container">
+                    <svg class="component-contacts__card-icon">
+                        <use xlink:href="/images/icons.svg#mail"></use>
+                    </svg>
+                </div>
+                <div class="component-contacts__card-content">
+                    <div class="component-contacts__card-title">
+                        E-mail
+                    </div>
+                    <div class="component-contacts__card-description">
+                        uralsrub5@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-benefits">
+    <div class="container">
+        <h2 class="h2">
+            Преимущества компании РосСруб
+        </h2>
+        <p class="subtitle">
+            Наша задача – это создание комфортного и экологичного загородного жилья.
+        </p>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="component-benefits__card">
+                    <img src="/images/benefits-1.svg" width="89" height="90" loading="lazy" alt=""
+                         class="component-benefits__card-image">
+                    <div class="component-benefits__card-description">
+                        <span>Бесплатный сервис</span> по поддержке сданного объекта
+                        в <span>первые 2 года</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="component-benefits__card">
+                    <img src="/images/benefits-2.svg" width="89" height="90" loading="lazy" alt=""
+                         class="component-benefits__card-image">
+                    <div class="component-benefits__card-description">
+                        <span>Экономим до 20% бюджета:</span> оптовые цены от поставщиков и избежание типовых ошибок
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="component-benefits__card">
+                    <img src="/images/benefits-3.svg" width="89" height="90" loading="lazy" alt=""
+                         class="component-benefits__card-image">
+                    <div class="component-benefits__card-description">
+                        У нас в команде <span>профессиональные рубщики</span> со стажем более 30 лет
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="component-benefits__card">
+                    <img src="/images/benefits-4.svg" width="89" height="90" loading="lazy" alt=""
+                         class="component-benefits__card-image">
+                    <div class="component-benefits__card-description">
+                        <span>Бесплатно устраняем дефекты,</span> возникшие по нашей вине, весь срок эксплуатации
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component_numbers">
+    <div class="container">
+        <h2 class="h2">
+            Преимущества деревянных домов из рубленного бревна
+        </h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="content">
+                    <p>
+                        Дом из бревна — традиционная русская технология. Хорошо подогнанная древесина уберегает от
+                        морозов надежнее кирпича, поэтому наши срубы
+                    </p>
+                    <h4>
+                        Преимущества домов нашего производства:
+                    </h4>
+                    <ul class="inside">
+                        <li>
+                            <span class="font-bold">
+                                Низкая теплопроводность
+                            </span>
+                            <p>
+                                Благодаря этому свойству зимой постройка долго сохраняет тепло, а летом остается
+                                прохладной
+                                даже в жару.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Воздухообмен</span>
+                            <p>
+                                Дома из бревна пропускают воздух, в них никогда не бывает душно, влажно или слишком
+                                сухо.
+
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Ручная обработка поверхности</span>
+                            <p>
+                                На производстве срезается всего 4 мм коры, поэтому у бревен остается естественная
+                                защита.
+
+                            </p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Легкий материал</span>
+                            <p>
+                                Практически любой фундамент выдерживает сруб из древесины хвойных пород
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="component_numbers__card">
+                            <div class="component_numbers__card-number">105</div>
+                            <div class="component_numbers__card-description">Построенных домов</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="component_numbers__card">
+                            <div class="component_numbers__card-number">7</div>
+                            <div class="component_numbers__card-description">Лет надежной работы</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="component_numbers__card">
+                            <div class="component_numbers__card-number">6
+                            </div>
+                            <div class="component_numbers__card-description">Регионов строительства</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="component_numbers__card">
+                            <div class="component_numbers__card-number">64</div>
+                            <div class="component_numbers__card-description">Разработанных проектов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p>
+                Купить деревянный дом в Екатеринбурге можно у нас. Мы привлекаем ответственных специалистов на каждом этапе возведения, не задерживаем сдачу проекта и точно просчитываем расходы. <span class="font-bold"> С нами вы сэкономите до 18% на строительстве. Позвоните нам, чтобы узнать все интересующие детали.</span>
+            </p>
+        </div>
+    </div>
+</div>        <div class="component-banner" style="margin-top: 100px;">
+    <div class="container">
+        <div class="component-banner__container">
+            <img src="/images/component-banner.png" alt="" width="1297" height="463" loading="lazy"
+                 class="component-banner__image">
+
+            <img src="/images/component-banner__decoration-1.png" alt="" width="185" height="157" loading="lazy"
+                 class="component-banner__decoration component-banner__decoration--1">
+            <img src="/images/component-banner__decoration-2.png" alt="" width="206" height="197" loading="lazy"
+                 class="component-banner__decoration component-banner__decoration--2">
+            <img src="/images/component-banner__decoration-3.png" alt="" width="168" height="184" loading="lazy"
+                 class="component-banner__decoration component-banner__decoration--3">
+            <div class="row relative">
+                <div class="col-xs-12 col-md-6">
+                    <h2 class="h2">
+                        Консультация рубщика прямо по телефону
+                    </h2>
+                    <p class="component-banner__description">
+                        Пуанта, следовательно, выстраивает громкостнoй прогрессийный период.
+                        Аллюзийно-полистилистическая композиция сонорна. Фаза mezzo forte продолжает хамбакер.
+                        Аллюзийно-полистилистическая композиция сонорна.
+                    </p>
+                    <div class="component-banner__actions">
+                        <button class="button button--primary button--big button--semibold">
+                            Заказать сруб
+                        </button>
+                        <button class="button button--white button--big button--semibold">
+                            Рассчитать стоимость
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-questions-first component-questions-first">
+    <div class="container">
+        <div class="component-questions-first__container">
+            <div class="component-questions-first__content">
+                <div class="component-questions-first__question">
+                    ?
+                </div>
+                <div class="component-questions-first__text">
+                    <div class="component-questions-first__title">
+                        Остались вопросы? Позвоните нам по телефону: <a href="">+7 (343) 202 00 78</a>
+                    </div>
+                    <div class="component-questions-first__description">
+                        Либо закажите обратный звонок... Мы свяжемся и все расскажем. Без навязывания услуг
+                    </div>
+                </div>
+            </div>
+            <button class="button button--primary" style="padding: 14px 30px;">
+                Заказать обратный звонок
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="component-questions-second">
+    <div class="container">
+        <div class="component-questions-second__container">
+            <div class="component-questions-second__content">
+                <div class="component-questions-second__title">
+                    Позвоните нам по телефону: <a href="">+7 (343) 202 00 78</a>
+                </div>
+                <div class="component-questions-second__description">
+                    и мы подберем необходимый для Вас проект в ближайшее время
+                </div>
+            </div>
+            <button class="button button--primary button--outline" style="padding: 16px 56px;">
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</div>
+<div class="component-questions-third">
+    <div class="container">
+        <div class="component-questions-third__container">
+            <div class="component-questions-third__content">
+                <div class="component-questions-third__title">
+                    Не понимаете, как рассчитать стоимость?
+                </div>
+                <div class="component-questions-third__description">
+                    Оформите заявку. Мы свяжемся и все расскажем. Без навязывания наших услуг.
+                </div>
+            </div>
+            <button class="button button--white" style="padding: 16px 85px;">
+                Задать вопрос
+            </button>
+        </div>
+    </div>
+</div>        <div class="component-form">
+    <img src="/images/component_form__background.png" alt="" width="1920" height="532" loading="lazy"
+         class="component-form__background">
+    <div class="container relative">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="component-form__content">
+                    <div class="component-form__title">
+                        Нужна консультация?
+                    </div>
+                    <div class="component-form__description">
+                        Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и
+                        подготовим индивидуальное предложение!
+                    </div>
+                    <a href="#" class="component-form__number">
+                        +7 (343) 202 00 78
+                    </a>
+                    <div class="component-form__description component-form__description--last">
+                        Или оставьте заявку в форме, и мы с Вами свяжемся <span>в ближайшее время!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <label class="component-input">
+                            <span class="component-input__label">
+                                Имя
+                            </span>
+                            <input type="text" placeholder="Василий" class="component-input__input">
+                        </label>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <label class="component-input">
+                            <span class="component-input__label">
+                                Телефон
+                            </span>
+                            <input type="text" placeholder="8 800 555 35 35" class="component-input__input">
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <label class="component-textarea">
+                            <textarea rows="4" placeholder="Напишите что-нибудь..."
+                                      class="component-textarea__textarea"></textarea>
+                        </label>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 24px;">
+                        <label class="component-checkbox">
+                            <input type="checkbox" checked class="component-checkbox__checkbox">
+                            <span class="component-checkbox__label">
+                                Я согласен на обработку Персональных данных
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 24px;">
+                        <button class="button button--white" style="padding: 14px 75px;">
+                            Задать вопрос
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </main>
+<div id="desktop-menu" class="desktop-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство домов
+                    </span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство бань
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link">
+                    Наши работы
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Телефон
+                        </div>
+                        <a href="#" class="desktop-menu__contact-description">
+                            +7 (343)-202-00-78
+                        </a>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#place"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Адрес
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            Екатеринбург, ул.Данилы Зверева, д.23/1
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Режим работы
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            ПН–ВС: 9:00–19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shadow-for-menu" role="button" tabindex="0" aria-label="Закрыть" class="shadow-for-menu"></div>
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__category-dropdown">
+                <a href="#" class="mobile-menu__category-dropdown-trigger">
+                    Продукция
+                </a>
+                <ul>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Сантехнические контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Бытовки
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Торговые блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Благоустройство
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                    </ul>
+            </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        О компании
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Услуги
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Наши работы
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Доставка и оплата
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Контакты
+                    </a>
+                </li>
+                    </ul>
+        <div class="mobile-menu__footer">
+            <a href="" class="mobile-menu__footer-link">
+                +7 912 683-53-64
+            </a>
+            <button class="button button--medium button--primary button--outline">
+                Заказать звонок
+            </button>
+            <button class="button button--medium button--primary button--outline">
+                Рассчитать стоимость
+            </button>
+            <div class="mobile-menu__social-list">
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#whatsapp"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#play"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#mail-fill"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <a href="">
+                        <img src="/images/logotype.svg"
+                             alt="Россруб: Строительство домов и бань из дерева"
+                             width="235"
+                             height="55">
+                    </a>
+                    <div class="footer__contact-list">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                                        Екатеринбург,
+                            ул. Данилы Зверева 23/1
+                            </span>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                            Работаем с 9:00 до 22:00 Без выходных 
+                        </span>
+                        </div>
+                        <hr class="horizontal">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                +7 (343)-202-00-78
+                            </a>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                uralsrub5@gmail.com
+                            </a>
+                        </div>
+                        <hr class="horizontal">
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-secondary">
+        <div class="container">
+            <div class="footer-secondary__row">
+                <p>
+                    2024 Все права защищены
+                </p>
+                <a href="" class="footer-secondary__link">
+                    Политика обработки персональных данных
+                </a>
+                <div>
+                    Сделано в
+                    <a href="" class="footer-secondary__link footer-secondary__link--bold">
+                        Маркс & Энгельс
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-selected-city" class="modal-selected-city" style="display:none;">
+    <div class="container">
+        <h2 class="h3">
+            Выберите ваш город
+        </h2>
+        <div class="row" style="margin-top: 40px;">
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Алапаевск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхотурье
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Качканар
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Серов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Арамиль
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Волчанск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кировград
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Среднеуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Артёмовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Дегтярск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Краснотурьинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сухой Лог
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Асбест
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Екатеринбург
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новая Ляля
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сысерть
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Берёзовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Заречный
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуфимск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Тавда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Богданович
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ивдель
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кушва
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Первоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Талица
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ирбит
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Лесной
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Полевской
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Туринск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Пышма
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Каменск-Уральский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Михайловск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ревда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Камышлов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Невьянск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Реж
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Карпинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижние Серги
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Североуральск
+                    </a>
+                </div>
+                    </div>
+    </div>
+</div><div id="modal-feedback" class="modal-feedback" style="display: none; max-width: 640px;">
+    <div class="modal-feedback__content">
+        <h2 class="h2">
+            Заказать звонок
+        </h2>
+        <p class="modal-feedback__description">
+            Оставьте заявку и наш специалист обязательно свяжется с вами в ближайшее время!
+        </p>
+        <form class="modal-feedback__form">
+            <label class="component-input">
+            <span class="component-input__label">
+                Имя
+            </span>
+                <input type="text" placeholder="Василий" class="component-input__input">
+            </label>
+            <label class="component-input">
+                <span class="component-input__label">
+                    Телефон
+                </span>
+                <input type="text" placeholder="8 800 555 35 35" class="component-input__input">
+            </label>
+            <label class="component-textarea">
+                            <textarea rows="4" placeholder="Напишите что-нибудь..."
+                                      class="component-textarea__textarea"></textarea>
+            </label>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <button class="button button--primary button--big button--semibold">
+                        Оформить заказ
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="modal-feedback__accept">
+                        Нажимая на кнопку, Вы даёте свое согласие на обработку Персональных данных
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    <script src="./js/main.js"></script>
+    <script src="./js/steps.js"></script>
+</body>
+</html>

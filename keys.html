@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Montserrat+Alternates:wght@600;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+
+    
+    
+    
+
+
+            <title>Cтраница продукта</title>
+                <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<div class="header header--secondary">
+    <div class="container">
+        <div class="header-location">
+            <span class="header-location__label">
+                Ваш город:
+            </span>
+            <button data-fancybox data-src="#modal-selected-city" class="header-location__action">
+                Екатеринбург
+            </button>
+        </div>
+        <ul class="header-business-info">
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#place"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Екатеринбург, ул. Данилы Зверева 23/1
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#mail"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     uralsrub5@gmail.com
+                </span>
+            </li>
+            <li class="header-business-info__item">
+                <span class="header-business-info__item-icon-container">
+                    <svg class="header-business-info__item-icon">
+                        <use xlink:href="/images/icons.svg#clock"></use>
+                    </svg>
+                </span>
+                <span class="header-business-info__item-label">
+                     Работаем: ПН-ВС с 9:00 до 19:00
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<header id="main-header" class="header header--main">
+    <div class="container">
+        <a href="/" class="header__logotype">
+            <img src="/images/logotype.svg" alt="Россруб: Строительство домов и бань из дерева" width="235" height="55">
+        </a>
+
+        <div class="header__menu">
+            <div class="header__desktop-burger">
+                <button id="desktop-menu-button" class="button button--primary header__desktop-menu"
+                        style="padding: 12px 12px">
+                    <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                    <span>
+                    Меню
+                </span>
+                </button>
+
+            </div>
+            <div class="header__search"></div>
+            <a href="" class="header__desktop-phone-link">
+                <span class="header__desktop-phone-link-row">
+                    <span class="header__desktop-phone-link-icon-container">
+                        <svg class="header__desktop-phone-link-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </span>
+                    <span class="header__desktop-phone-link-number">
+                        +7 912 683-53-64
+                    </span>
+                </span>
+                <span class="header__desktop-phone-link-description">
+                    Заказать звонок
+                </span>
+            </a>
+
+            <button data-fancybox data-src="#modal-feedback"
+                    class="button button--accent button--outline button--medium">
+                Рассчитать стоимость
+            </button>
+        </div>
+
+        <div class="header__mobile">
+            <a href="" class="header__mobile-phone-link">
+                <svg class="">
+                    <use xlink:href="/images/icons.svg#phone"></use>
+                </svg>
+            </a>
+            <hr class="vertical" style="height: 20px; margin: 0 20px">
+            <button id="mobile-menu-button" class="header__mobile-menu-button">
+                <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                      </span>
+                <span>
+            </button>
+        </div>
+    </div>
+</header>    <main class="" style="margin: 40px 0;">
+        
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Категория
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link active">
+                        <span>
+                            Продукт
+                        </span>
+                    </a>
+                </li>
+                    </ol>
+    </div>
+</nav>        <div class="product-info" style="margin: 40px 0;">
+            <div class="container">
+                <div class="row middle-md">
+                    <div class="col-xs-12 col-md-8">
+                        <h1 class="h1">
+                            Проект деревянной бани Б-80 "Ангара"
+                        </h1>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="" class="">
+                                    Предыдущий проект
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="" class="">
+                                    Следующий проект
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div class="product-info__slider ">
+                            <div class="product-info__slider-navigation">
+                                
+                                <button data-jump-to="layout" class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/images/icons.svg#layout"></use>
+                                    </svg>
+                                    Планировка
+                                </button>
+                                <hr class="vertical" style="height: 20px; margin: 0 8px">
+                                <button data-jump-to="video" class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/images/icons.svg#video-outline"></use>
+                                    </svg>
+                                    Видео отзыв
+                                </button>
+                                <hr class="vertical" style="height: 20px; margin: 0 8px">
+                                <button class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/images/icons.svg#photo"></use>
+                                    </svg>
+                                    16 фото
+                                </button>
+                            </div>
+                            <div id="product-slider" class=" f-carousel">
+                                <div data-thumb-src="/images/gallery-1.png"
+                                     class="f-carousel__slide">
+                                    <img src="/images/gallery-1.png" alt="">
+                                </div>
+                                <div data-thumb-src="/images/gallery-2.png" class="f-carousel__slide">
+                                    <img src="/images/gallery-2.png" alt="">
+                                </div>
+                                <div data-thumb-src="/images/gallery-3.png" class="f-carousel__slide">
+                                    <img src="/images/gallery-3.png" alt="">
+                                </div>
+                                <div id="layout" data-thumb-src="/images/component-triple-set-1.png"
+                                     class="f-carousel__slide">
+                                    <img src="/images/component-triple-set-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <div class="product-info__card">
+                            <ul class="product-info__characteristics">
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                       Площадь
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        45 м2
+                                    </span>
+                                </li>
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                        Вместимость
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        5 человек
+                                    </span>
+                                </li>
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                        Вес (пример)
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        30 тонн
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<div id="desktop-menu" class="desktop-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство домов
+                    </span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="desktop-menu__main-link">
+                    <svg class="desktop-menu__main-link-icon">
+                        <use xlink:href="/images/icons.svg#building-house"></use>
+                    </svg>
+                    <span class="desktop-menu__main-link-title">
+                        Строительство бань
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link desktop-menu__link--hr">
+                    Услуги
+                </a>
+                <ul class="desktop-menu__list">
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="desktop-menu__sublink">
+                            Проектирование домов из бревна
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <a href="#" class="desktop-menu__link">
+                    Наши работы
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Телефон
+                        </div>
+                        <a href="#" class="desktop-menu__contact-description">
+                            +7 (343)-202-00-78
+                        </a>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#place"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Адрес
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            Екатеринбург, ул.Данилы Зверева, д.23/1
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop-menu__contact">
+                    <div class="desktop-menu__contact-icon-container">
+                        <svg class="desktop-menu__contact-icon">
+                            <use xlink:href="/images/icons.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <div class="desktop-menu__contact-content">
+                        <div class="desktop-menu__contact-title">
+                            Режим работы
+                        </div>
+                        <div class="desktop-menu__contact-description">
+                            ПН–ВС: 9:00–19:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shadow-for-menu" role="button" tabindex="0" aria-label="Закрыть" class="shadow-for-menu"></div>
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__category-dropdown">
+                <a href="#" class="mobile-menu__category-dropdown-trigger">
+                    Продукция
+                </a>
+                <ul>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Сантехнические контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Бытовки
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Торговые блок-контейнеры
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Благоустройство
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </li>
+                                    </ul>
+            </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        О компании
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Услуги
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Наши работы
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Доставка и оплата
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Контакты
+                    </a>
+                </li>
+                    </ul>
+        <div class="mobile-menu__footer">
+            <a href="" class="mobile-menu__footer-link">
+                +7 912 683-53-64
+            </a>
+            <button class="button button--medium button--primary button--outline">
+                Заказать звонок
+            </button>
+            <button class="button button--medium button--primary button--outline">
+                Рассчитать стоимость
+            </button>
+            <div class="mobile-menu__social-list">
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#whatsapp"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#play"></use>
+                    </svg>
+                </button>
+                <button class="button button--small button--primary button--icon button--outline">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#mail-fill"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><footer class="footer">
+    <div class="footer__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <a href="">
+                        <img src="/images/logotype.svg"
+                             alt="Россруб: Строительство домов и бань из дерева"
+                             width="235"
+                             height="55">
+                    </a>
+                    <div class="footer__contact-list">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                                        Екатеринбург,
+                            ул. Данилы Зверева 23/1
+                            </span>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <span class="footer__contact-description">
+                            Работаем с 9:00 до 22:00 Без выходных 
+                        </span>
+                        </div>
+                        <hr class="horizontal">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                +7 (343)-202-00-78
+                            </a>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon-container">
+                                <svg class="footer__contact-icon">
+                                    <use xlink:href="/images/icons.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <a href="#" class="footer__contact-link">
+                                uralsrub5@gmail.com
+                            </a>
+                        </div>
+                        <hr class="horizontal">
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="footer__category">
+                                <a href="" class="footer__category-link">
+                                    Цены
+                                </a>
+                                <ul class="footer__category-list">
+                                    <li>
+                                        <a href="" class="footer__category-sublink">
+                                            Цены на срубы домов
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-secondary">
+        <div class="container">
+            <div class="footer-secondary__row">
+                <p>
+                    2024 Все права защищены
+                </p>
+                <a href="" class="footer-secondary__link">
+                    Политика обработки персональных данных
+                </a>
+                <div>
+                    Сделано в
+                    <a href="" class="footer-secondary__link footer-secondary__link--bold">
+                        Маркс & Энгельс
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-selected-city" class="modal-selected-city" style="display:none;">
+    <div class="container">
+        <h2 class="h3">
+            Выберите ваш город
+        </h2>
+        <div class="row" style="margin-top: 40px;">
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Алапаевск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхотурье
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Качканар
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Серов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Арамиль
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Волчанск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кировград
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Среднеуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Артёмовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Дегтярск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Краснотурьинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сухой Лог
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Асбест
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Екатеринбург
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новая Ляля
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Сысерть
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Берёзовский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Заречный
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Красноуфимск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Новоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Тавда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Богданович
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ивдель
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Кушва
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Первоуральск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Талица
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхний Тагил
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ирбит
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Лесной
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Полевской
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Туринск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Пышма
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Каменск-Уральский
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Михайловск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Ревда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Салда
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Камышлов
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Невьянск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Реж
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Верхняя Тура
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Карпинск
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Нижние Серги
+                    </a>
+                </div>
+                            <div class="col-xs-6 col-sm-2">
+                    <a href="#" class="modal-selected-city__link">
+                        Североуральск
+                    </a>
+                </div>
+                    </div>
+    </div>
+</div><div id="modal-feedback" class="modal-feedback" style="display: none; max-width: 640px;">
+    <div class="modal-feedback__content">
+        <h2 class="h2">
+            Заказать звонок
+        </h2>
+        <p class="modal-feedback__description">
+            Оставьте заявку и наш специалист обязательно свяжется с вами в ближайшее время!
+        </p>
+        <form class="modal-feedback__form">
+            <label class="component-input">
+            <span class="component-input__label">
+                Имя
+            </span>
+                <input type="text" placeholder="Василий" class="component-input__input">
+            </label>
+            <label class="component-input">
+                <span class="component-input__label">
+                    Телефон
+                </span>
+                <input type="text" placeholder="8 800 555 35 35" class="component-input__input">
+            </label>
+            <label class="component-textarea">
+                            <textarea rows="4" placeholder="Напишите что-нибудь..."
+                                      class="component-textarea__textarea"></textarea>
+            </label>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <button class="button button--primary button--big button--semibold">
+                        Оформить заказ
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="modal-feedback__accept">
+                        Нажимая на кнопку, Вы даёте свое согласие на обработку Персональных данных
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    <script src="./js/main.js"></script>
+</body>
+</html>
