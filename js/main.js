@@ -1,59 +1,15 @@
 const MIN_DESKTOP_WIDTH = 1200;
 
 document.addEventListener('DOMContentLoaded', function () {
-    Fancybox.bind("[data-fancybox]", {});
-    initSlider();
-
-    const faqs = document.querySelector('.component-faq')
-    if (faqs) {
-        new Accordion(faqs, {
-            activeClass: 'component-faq__card--active',
-            multiple: true
-        })
-    }
-
-
-    initHover()
+    initComponentProjectCategories()
+    initPortfolioAndProjectPage()
+    initComponentLicences()
+    initComponentGallery()
+    initComponentFAQ()
     initDesktopMenu()
     initMobileMenu()
-    initSliders()
 })
 
-function initSliders() {
-    const container = document.getElementById("slider");
-    const options = {infinite: false};
-
-    if (container) {
-        new Carousel(container, options);
-    }
-
-    const productSlider = document.getElementById("product-slider");
-    const jumpButtons = document.querySelectorAll('[data-jump-to]');
-
-    const productOptions = {
-        Dots: false,
-        Thumbs: {
-            type: "classic",
-        },
-    }
-
-    if (productSlider) {
-        const slider = new Carousel(productSlider, productOptions, {Thumbs});
-        if (slider) {
-            jumpButtons.forEach(function (btn) {
-                btn.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const jumpToId = e.target.getAttribute('data-jump-to');
-                    const index = slider.slides.findIndex(item => item.el.id === jumpToId);
-                    if (index !== -1) {
-                        slider.slideTo(index)
-                    }
-                })
-            })
-        }
-    }
-
-}
 
 function initDesktopMenu() {
     const btn = document.getElementById('desktop-menu-button')
@@ -102,7 +58,6 @@ function initDesktopMenu() {
 
 }
 
-
 function initMobileMenu() {
     const btn = document.getElementById('mobile-menu-button')
     const menu = document.getElementById('mobile-menu')
@@ -144,192 +99,99 @@ function initMobileMenu() {
     }
 }
 
+function initComponentProjectCategories() {
+    const UNFOCUS_CLASS = 'component-project-categories__card--unfocus'
+    const ONFOCUS_CLASS = 'component-project-categories__card--onfocus'
+    const CARD_CLASS = 'component-project-categories__card'
 
-function initHover() {
-    const cards = document.querySelectorAll('.component-project-categories__card')
-
-    cards.forEach(card => {
-        const row = card.closest('.row')
-        const scopedCards = row.querySelectorAll('.component-project-categories__card')
-        card.addEventListener('mouseenter', () => {
-            scopedCards.forEach(scopedCard => {
-                scopedCard.classList.add('component-project-categories__card--unfocus')
+    const components = document.querySelectorAll('.component-project-categories')
+    components.forEach(component => {
+        const cards = component.querySelectorAll(`.${CARD_CLASS}`)
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                cards.forEach(scopedCard => {
+                    scopedCard.classList.add(UNFOCUS_CLASS)
+                })
+                card.classList.remove(UNFOCUS_CLASS)
+                card.classList.add(ONFOCUS_CLASS)
             })
-            card.classList.remove('component-project-categories__card--unfocus')
-            card.classList.add('component-project-categories__card--onfocus')
-        })
-        card.addEventListener('mouseleave', () => {
-            scopedCards.forEach(scopedCard => {
-                scopedCard.classList.remove('component-project-categories__card--unfocus')
-                scopedCard.classList.remove('component-project-categories__card--onfocus')
+            card.addEventListener('mouseleave', () => {
+                cards.forEach(scopedCard => {
+                    scopedCard.classList.remove(UNFOCUS_CLASS)
+                    scopedCard.classList.remove(ONFOCUS_CLASS)
+                })
             })
         })
     })
 
+
 }
 
-function initSlider() {
-    const container = document.getElementById("slider");
+function initComponentGallery() {
+    const container = document.getElementById("portfolio-slider");
     const options = {infinite: false};
+
     if (container) {
-        new Carousel(container, options);
+        const carusel = new Carousel(container, options);
     }
+
+    Fancybox.bind("[data-fancybox='gallery']", {});
 }
 
-
-const defaultOptions = {
-    duration: 300,
-    initAccessibility: true,
-    openInInit: null,
-    multiple: false,
-    collapse: true,
-    accordionItem: '[data-accordion]',
-    accordionItemButton: '[data-accordion-button]',
-    accordionItemBody: '[data-accordion-body]',
-    activeClass: 'js-accordion-open',
+function initComponentLicences() {
+    Fancybox.bind("[data-fancybox='licences']", {});
 }
 
-class Accordion {
-    constructor(element, options) {
-        this.options = Object.assign({}, defaultOptions, options)
-        this.elements = element.querySelectorAll(this.options.accordionItem)
-        if (this.options.activeClass.length === 0) {
-            console.error(
-                'Ошибка: Наличие активного класса обязательно для продолжения работы скрипта!'
-            )
-        }
-        this.addEvent()
+function initComponentFAQ() {
+    const faqs = document.querySelectorAll('.component-faq')
+    faqs.forEach(faq => {
+        new Accordion(faq, {
+            activeClass: 'component-faq__card--active',
+            multiple: false,
+            openInInit: 0
+        })
+    })
+}
+
+function initPortfolioAndProjectPage() {
+    const productSlider = document.getElementById("product-slider");
+    const jumpButtons = document.querySelectorAll('[data-jump-to]');
+    const productOptions = {
+        Dots: false,
+        Thumbs: {
+            type: "classic",
+        },
     }
 
-    addEvent() {
-        for (let i = 0; i < this.elements.length; i++) {
-            const accordion = this.elements[i]
-            const button = accordion.querySelector(
-                this.options.accordionItemButton
-            )
-            const body = accordion.querySelector(this.options.accordionItemBody)
-            if (!button)
-                console.error(
-                    'Ошибка: Не найдена кнопка аккордиона у элемента',
-                    accordion
-                )
-            if (!body)
-                console.error(
-                    'Ошибка: Не найдено тело аккордиона у элемента',
-                    accordion
-                )
-
-            button.addEventListener('click', () => {
-                this.toggle(i)
+    if (productSlider) {
+        const slider = new Carousel(productSlider, productOptions, {Thumbs});
+        if (slider) {
+            const BUTTON_ACTIVE_CLASS = 'product-info__slider-button--active'
+            jumpButtons.forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const jumpToId = e.target.getAttribute('data-jump-to');
+                    if (jumpToId === 'start') {
+                        slider.slideTo(0)
+                        return false
+                    }
+                    const index = slider.slides.findIndex(item => item.el.id === jumpToId);
+                    if (index !== -1) {
+                        slider.slideTo(index)
+                    }
+                })
             })
-            body.style.transitionDuration = this.options.duration + 'ms'
-            body.style.overflow = 'hidden'
-            body.addEventListener('transitionend', () => {
-                if (body.style.height !== '0px') {
-                    body.style.height = ''
-                }
+            slider.on('change', function (fancybox, slide) {
+                const _slide = fancybox.slides[slide];
+                jumpButtons.forEach((btn) => {
+                    btn.classList.remove(BUTTON_ACTIVE_CLASS)
+                    if (btn.getAttribute('data-jump-to') === _slide.el.id) {
+                        btn.classList.add(BUTTON_ACTIVE_CLASS)
+                    }
+                })
             })
-            if (this.options.initAccessibility) {
-                const idBody =
-                    body.getAttribute('id') ? body.getAttribute('id') :
-                        this.options.accordionItemBody.replace(/[^\w\s]/gi, '') +
-                        '-' +
-                        i
-                const idButton =
-                    button.getAttribute('id') ? body.getAttribute('id') :
-                        this.options.accordionItemButton.replace(/[^\w\s]/gi, '') +
-                        '-' +
-                        i
-                button.setAttribute('id', idButton)
-                button.setAttribute('type', 'button')
-                button.setAttribute('role', 'button')
-                button.setAttribute('aria-expanded', 'true')
-                button.setAttribute('aria-disabled', 'false')
-                button.setAttribute('aria-controls', idBody)
-                body.setAttribute('id', idBody)
-                body.setAttribute('role', 'region')
-                body.setAttribute('aria-labelledby', idButton)
-            }
         }
-        this.closeAll()
-        if (this.options.openInInit !== null) {
-            this.open(this.options.openInInit)
-        }
-    }
 
-    getOpenAccordionCount() {
-        let count = 0
-        for (let i = 0; i < this.elements.length; ++i) {
-            if (this.elements[i].classList.contains(this.options.activeClass))
-                count++
-        }
-        return count
-    }
-
-    open(index, fromOpenAll = false) {
-        const element = this.elements[index]
-        if (element) {
-            if (!this.options.multiple && !fromOpenAll) this.closeAll()
-            const body = element.querySelector(this.options.accordionItemBody)
-            body.style.height = body.scrollHeight + 'px'
-            element.classList.add(this.options.activeClass)
-            if (this.options.initAccessibility) {
-                const button = element.querySelector(
-                    this.options.accordionItemButton
-                )
-                button.setAttribute('aria-expanded', 'true')
-                button.setAttribute('aria-disabled', 'true')
-            }
-        }
-    }
-
-    close(index) {
-        const element = this.elements[index]
-        if (element) {
-            const body = element.querySelector(this.options.accordionItemBody)
-            body.style.height = body.scrollHeight + 'px'
-            setTimeout(() => {
-                element.classList.remove(this.options.activeClass)
-                body.style.height = '0'
-                if (this.options.initAccessibility) {
-                    const button = element.querySelector(
-                        this.options.accordionItemButton
-                    )
-                    button.setAttribute('aria-expanded', 'false')
-                    button.setAttribute('aria-disabled', 'false')
-                }
-            }, 100)
-        }
-    }
-
-    toggle(index) {
-        const element = this.elements[index]
-        if (element) {
-            if (element.classList.contains(this.options.activeClass)) {
-                if (this.options.collapse || this.getOpenAccordionCount() > 1) {
-                    this.close(index)
-                }
-            } else {
-                this.open(index)
-            }
-        }
-    }
-
-    toggleAll() {
-        for (let i = 0; i < this.elements.length; i++) {
-            this.toggle(i)
-        }
-    }
-
-    openAll() {
-        for (let i = 0; i < this.elements.length; i++) {
-            this.open(i, true)
-        }
-    }
-
-    closeAll() {
-        for (let i = 0; i < this.elements.length; i++) {
-            this.close(i)
-        }
+        Fancybox.bind("[data-fancybox='portfolio-and-project']", {});
     }
 }

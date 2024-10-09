@@ -2,18 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const steps = document.getElementById('steps')
 
     if (steps) {
+        const wrapper = steps.querySelector('.steps__container')
         const top = steps.getBoundingClientRect().top + document.documentElement.scrollTop
+        const parentElement = steps.parentElement
+        const hiddenElement = document.createElement('div')
+        hiddenElement.style.height = steps.offsetHeight + 'px'
         steps.classList.add('steps--sticky')
 
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > top) {
                 setTimeout(() => {
                     steps.classList.add('steps--fixed')
-                }, 300)
+                    parentElement.insertBefore(hiddenElement, steps)
+                })
             } else {
                 setTimeout(() => {
                     steps.classList.remove('steps--fixed')
-                }, 300)
+                    hiddenElement.remove()
+                })
             }
         })
 
@@ -27,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         link.classList.remove('steps__link--active')
                     })
                     link.classList.add('steps__link--active')
+                    wrapper.scrollLeft = link.offsetLeft - wrapper.offsetLeft
+
                 }
             })
         }, {

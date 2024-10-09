@@ -36,7 +36,7 @@
     
 
 
-            <title>Новости</title>
+            <title>Cтраница продукта</title>
                 <link href="./css/main.css" rel="stylesheet" type="text/css"/>
     </head>
 <body>
@@ -146,38 +146,258 @@
             </button>
         </div>
     </div>
-</header>    <section class="component-404" style="margin: 60px 0;">
-
-        <div class="container" style="text-align: center">
-            <div class="component-404__banner">
-                <div class="component-404__banner-image">
-                    <figure>
-                        <img src="/test/images/7b6642fd3bfbe2d582c84b81070b49f9.png" alt="">
-                        <figcaption>
-                            Текст
-                        </figcaption>
-                    </figure>
+</header>    <main class="" style="margin: 40px 0;">
+        
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Категория
+                        </span>
+                    </a>
+                </li>
+                            <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link active">
+                        <span>
+                            Продукт
+                        </span>
+                    </a>
+                </li>
+                    </ol>
+    </div>
+</nav>        <div class="product-info" style="margin: 40px 0;">
+            <div class="container">
+                <div class="row middle-md">
+                    <div class="col-xs-12 col-md-8">
+                        <h1 class="h1">
+                            Проект деревянной бани Б-80 "Ангара"
+                        </h1>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="" class="">
+                                    Предыдущий проект
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="" class="">
+                                    Следующий проект
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="component-404__banner-content">
-                    <p class="component-404__banner-error">
-                        404
-                    </p>
-                    <p class="component-404__banner-text">
-                        Страница не найдена
-                    </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div class="product-info__slider ">
+                            <div class="product-info__slider-navigation">
+                                
+                                <button data-jump-to="layout" class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/test/images/icons.svg#layout"></use>
+                                    </svg>
+                                    Планировка
+                                </button>
+                                <hr class="vertical" style="height: 20px; margin: 0 8px">
+                                <button data-jump-to="video" class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/test/images/icons.svg#video-outline"></use>
+                                    </svg>
+                                    Видео отзыв
+                                </button>
+                                <hr class="vertical" style="height: 20px; margin: 0 8px">
+                                <button class="product-info__slider-button">
+                                    <svg class="product-info__slider-icon">
+                                        <use xlink:href="/test/images/icons.svg#photo"></use>
+                                    </svg>
+                                    16 фото
+                                </button>
+                            </div>
+                            <div id="product-slider" class=" f-carousel">
+                                <div data-thumb-src="/test/images/gallery-1.png"
+                                     class="f-carousel__slide">
+                                    <img src="/test/images/gallery-1.png" alt="">
+                                </div>
+                                <div data-thumb-src="/test/images/gallery-2.png" class="f-carousel__slide">
+                                    <img src="/test/images/gallery-2.png" alt="">
+                                </div>
+                                <div data-thumb-src="/test/images/gallery-3.png" class="f-carousel__slide">
+                                    <img src="/test/images/gallery-3.png" alt="">
+                                </div>
+                                <div id="layout" data-thumb-src="/test/images/component-triple-set-1.png"
+                                     class="f-carousel__slide">
+                                    <img src="/test/images/component-triple-set-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <div class="product-info__card">
+                            <ul class="product-info__characteristics">
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                       Размеры:
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        11х17м
+                                    </span>
+                                </li>
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                        Дом:
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        151 м2
+                                    </span>
+                                </li>
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                        Комнат:
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                   <span class="product-info__characteristics-name">
+                                        Спален:
+                                   </span>
+                                    <span class="product-info__characteristics-value">
+                                        4
+                                    </span>
+                                </li>
+                            </ul>
+                            <hr class="horizontal" style="margin: 20px 0;">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7">
+                                    <button class="button button--accent button--medium" style="width: 100%;">
+                                        Заказать проект
+                                    </button>
+                                </div>
+                                <div class="col-xs-12 col-sm-5">
+                                    <button class="button button--outline button--primary button--medium"
+                                            style="width: 100%;">
+                                        Задать вопрос
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info__card">
+                            <h3 class="h4">
+                                Смета проекта:
+                            </h3>
+                            <ul class="product-info__prices">
+                                <li>
+                                    <span class="product-info__prices-name">
+                                        Сруб
+                                        <span class="product-info__prices-description">
+
+                                        </span>
+                                    </span>
+                                    <span class="product-info__prices-price">
+                                        2 680 000₽
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="product-info__prices-name">
+                                        Монтаж сруба
+                                        <span class="product-info__prices-description">
+                                            (кран, джут, нагеля входят в стоимость)
+                                        </span>
+                                    </span>
+                                    <span class="product-info__prices-price">
+                                        2 680 000₽
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="product-info__prices-name">
+                                        Монтаж сруба
+                                        <span class="product-info__prices-description">
+                                            (кран, джут, нагеля входят в стоимость)
+                                        </span>
+                                    </span>
+                                    <span class="product-info__prices-price">
+                                        123 000₽
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="row middle-sm">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="product-info__price">
+                                        от <span>5 285 000₽</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <button class="button button--accent"
+                                            style="width: 100%; padding: 12px; font-size: 14px; font-weight: 600">
+                                        Заказать расчет стоимости
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info__options">
+                            <div class="product-info__options-card">
+                                <svg class="product-info__options-card-icon">
+                                    <use xlink:href="/test/images/icons.svg#room"></use>
+                                </svg>
+                                <div class="product-info__options-card-text">
+                                    Размеры: <span class="product-info__options-card-value">11х17</span>
+                                </div>
+                            </div>
+                            <div class="product-info__options-card">
+                                <svg class="product-info__options-card-icon">
+                                    <use xlink:href="/test/images/icons.svg#door"></use>
+                                </svg>
+                                <div class="product-info__options-card-text">
+                                    Комнат: <span class="product-info__options-card-value">5</span>
+                                </div>
+                            </div>
+                            <div class="product-info__options-card">
+                                <svg class="product-info__options-card-icon">
+                                    <use xlink:href="/test/images/icons.svg#home"></use>
+                                </svg>
+                                <div class="product-info__options-card-text">
+                                    Дом: <span class="product-info__options-card-value">151 м2</span>
+                                </div>
+                            </div>
+                            <div class="product-info__options-card">
+                                <svg class="product-info__options-card-icon">
+                                    <use xlink:href="/test/images/icons.svg#bed"></use>
+                                </svg>
+                                <div class="product-info__options-card-text">
+                                    Спален: <span class="product-info__options-card-value">4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-info__banner">
+                            <div class="product-info__banner-content">
+                                <div class="product-info__banner-title">
+                                    Знаете о нашей рассрочке?
+                                </div>
+                                <div class="product-info__banner-text">
+                                    Оплачивайте работу после выполнения, в виде рассрочки
+                                </div>
+                            </div>
+                            <a href="" class="button button--white button--medium">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-            <p class="component-404__text">
-                Тут как то пустовато, пойдемте на главную?
-            </p>
-
-            <a href="/" class="button button--black component-404__link">
-                Перейти на главную
-            </a>
         </div>
-    </section>
+    </main>
 <div id="desktop-menu" class="desktop-menu">
     <div class="container">
         <div class="row">
@@ -444,7 +664,7 @@
                         <div class="footer__contact">
                             <div class="footer__contact-icon-container">
                                 <svg class="footer__contact-icon">
-                                    <use xlink:href="/test/images/icons.svg#place"></use>
+                                    <use xlink:href="/test/images/icons.svg#burger"></use>
                                 </svg>
                             </div>
                             <span class="footer__contact-description">
@@ -455,18 +675,18 @@
                         <div class="footer__contact">
                             <div class="footer__contact-icon-container">
                                 <svg class="footer__contact-icon">
-                                    <use xlink:href="/test/images/icons.svg#clock"></use>
+                                    <use xlink:href="/test/images/icons.svg#burger"></use>
                                 </svg>
                             </div>
                             <span class="footer__contact-description">
                             Работаем с 9:00 до 22:00 Без выходных 
                         </span>
                         </div>
-                        <hr class="horizontal dashed">
+                        <hr class="horizontal">
                         <div class="footer__contact">
                             <div class="footer__contact-icon-container">
                                 <svg class="footer__contact-icon">
-                                    <use xlink:href="/test/images/icons.svg#phone"></use>
+                                    <use xlink:href="/test/images/icons.svg#burger"></use>
                                 </svg>
                             </div>
                             <a href="#" class="footer__contact-link">
@@ -476,42 +696,20 @@
                         <div class="footer__contact">
                             <div class="footer__contact-icon-container">
                                 <svg class="footer__contact-icon">
-                                    <use xlink:href="/test/images/icons.svg#mail"></use>
+                                    <use xlink:href="/test/images/icons.svg#burger"></use>
                                 </svg>
                             </div>
                             <a href="#" class="footer__contact-link">
                                 uralsrub5@gmail.com
                             </a>
                         </div>
-                        <hr class="horizontal dashed">
-                        <div class="footer__organization">
-                            <p>
-                                ИП Мирзаянов Максим Фанилович
-                            </p>
-                            <p>
-                                ИНН: 667351403006
-                            </p>
-                            <p>
-                                ОГРН: 317665800197731
-                            </p>
-                        </div>
+                        <hr class="horizontal">
+
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-9">
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
-                            <div class="footer__category">
-                                <a href="" class="footer__category-link">
-                                    Цены
-                                </a>
-                                <ul class="footer__category-list">
-                                    <li>
-                                        <a href="" class="footer__category-sublink">
-                                            Цены на срубы домов
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="footer__category">
                                 <a href="" class="footer__category-link">
                                     Цены
